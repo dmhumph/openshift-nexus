@@ -1,0 +1,22 @@
+{
+    "apiVersion": "v1",
+    "kind": "PersistentVolume",
+    "metadata": {
+        "name": "sonatype-work",
+        "labels": {
+           "type": "local"
+        }
+    },
+    "spec": {
+        "hostPath": {
+            "path": "/tmp/sonatype"
+        },
+        "accessModes": [
+            "ReadWriteOnce"
+        ],
+        "capacity": {
+            "storage": "5Gi"
+        },
+        "persistentVolumeReclaimPolicy": "Retain"
+    }
+}
