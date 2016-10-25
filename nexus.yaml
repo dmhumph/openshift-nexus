@@ -42,7 +42,7 @@ objects:
   metadata:
     name: nexus
   spec:
-    dockerImageRepository: sonatype/nexus
+    dockerImageRepository: sonatype/nexus:oss
 - apiVersion: v1
   kind: Service
   metadata:
