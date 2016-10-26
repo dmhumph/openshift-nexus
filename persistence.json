@@ -9,7 +9,7 @@
     },
     "spec": {
         "hostPath": {
-            "path": "/tmp/sonatype"
+            "path": "/tmp/sonatype-work"
         },
         "accessModes": [
             "ReadWriteOnce"
