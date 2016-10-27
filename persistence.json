@@ -13,7 +13,7 @@ oc create -f - <<-EOF
             "path": "/tmp/sonatype-work"
         },
         "accessModes": [
-            "ReadWriteOnce"
+            "ReadWriteMany"
         ],
         "capacity": {
             "storage": "5Gi"
