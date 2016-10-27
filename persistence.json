@@ -1,3 +1,4 @@
+oc create -f - <<-EOF
 {
     "apiVersion": "v1",
     "kind": "PersistentVolume",
