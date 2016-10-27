@@ -10,7 +10,8 @@ oc create -f - <<-EOF
     },
     "spec": {
         "hostPath": {
-            "path": "/tmp/sonatype-work"
+            "path": "/tmp/sonatype-work",
+            "server": "ocp-master.cloudapps.ocp.home"
         },
         "accessModes": [
             "ReadWriteMany"
