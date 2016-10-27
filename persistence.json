@@ -21,3 +21,4 @@ oc create -f - <<-EOF
         "persistentVolumeReclaimPolicy": "Retain"
     }
 }
+EOF
