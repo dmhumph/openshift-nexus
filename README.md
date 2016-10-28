@@ -2,6 +2,7 @@
 
 How to add persistent storage to nexus deployment using local storage:
 
+----
 mkdir /tmp/sonatype-work
 
 chmod 777 sonatype-work
@@ -31,15 +32,15 @@ oc create -f - <<-EOF
     }
 }
 EOF
-
+----
 
 Mount PVC to nexus and remove empty dir:
-
+----
 oc volumes dc/nexus --add --name 'nexus-volume-1' --type 'pvc' --mount-path '/sonatype-work/' --claim-name 'nexus-pv' --claim-size '3Gi' --overwrite --claim-mode='ReadWriteMany'
-
+----
 Add policy to user to have default user permissions:
-
+----
 oadm policy add-scc-to-user anyuid -z default
-
+----
 
 Restart failed POD.
