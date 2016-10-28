@@ -1,6 +1,6 @@
 # openshift-nexus
 
-How to add persistent storage to nexus deployment using local storage:
+## How to add persistent storage to nexus deployment using local storage:
 
 
 ```
